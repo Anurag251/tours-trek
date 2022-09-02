@@ -119,6 +119,7 @@ header
         padding: 0 1rem
         font-size: 16px
         color: $light
+        cursor: pointer
 
         &.active
           color: $pri
@@ -196,6 +197,10 @@ header
 .about
   @include grid($columns: 1fr 1fr)
   align-items: center
+
+  &.switch-sec
+    .image-sec
+      grid-area: 1
 
   &:hover
     .image-sec
@@ -292,6 +297,7 @@ header
 
     .item
       box-shadow: 0 4px 20px rgba($dark, .1)
+      background-color: $light
 
       &:hover
         .image-sec
@@ -309,7 +315,7 @@ header
           @include trans()
 
       .text-sec
-        padding: .8rem
+        padding: 1rem
 
         .days
           padding: .2rem .4rem
@@ -386,7 +392,12 @@ header
 .explore-activities
   overflow: hidden
 
+  .list
+    @include grid($columns: 1fr 1fr 1fr 1fr)
+
   .item
+    background-color: $light
+
     .image-sec
       height: 200px
       width: 100%
@@ -396,6 +407,16 @@ header
         height: 100%
         width: 100%
         object-fit: cover
+
+    .text-sec
+      border: 1px solid rgba($dark, .5)
+      padding: .7rem
+
+      .name
+        color: $dark
+
+      .price
+        color: $price
 
 /***********      gallery      ***********/
 .gallery
@@ -419,8 +440,17 @@ header
     height: 100%
     width: 100%
 
+    .swiper-button-next
+      &:hover
+        transform: scale(1.05) translateX(4px)
+
+    .swiper-button-prev
+      &:hover
+        transform: scale(1.05) translateX(-4px)
+
     .swiper-button-next, .swiper-button-prev
       @include flex($justify: center)
+      @include trans()
 
       img
         height: 30px
@@ -517,3 +547,264 @@ footer
 
         a
           color: $light
+
+/***********      page-banner      ***********/
+.page-banner
+  height: 50vh
+  @include image()
+  @include flex($justify: center)
+  position: relative
+
+  &::before
+    content: ''
+    @include dark($opacity: .3)
+    z-index: 1
+
+  .page-title
+    position: relative
+    margin-top: 2rem
+    color: $light
+    z-index: 2
+    text-align: center
+
+    h2
+      font-size: 40px
+
+    h4
+      font-size: 20px
+      font-weight: 400
+      cursor: pointer
+
+      a
+        color: $light
+
+/***********      about-page      ***********/
+.about-page
+  .section
+    @include grid($columns: 1fr 1.5fr)
+
+    .text-sec
+      .sec-title
+        color: $main
+        font-size: 24px
+        font-weight: 500
+        margin-bottom: 10px
+
+      p
+        font-size: 17px
+        color: $para
+        margin-bottom: 1rem
+        line-height: 1.5rem
+
+    .image-sec
+      height: 530px
+      width: 100%
+      position: relative
+
+      img
+        position: absolute
+        object-fit: cover
+
+        &:nth-child(1)
+          top: 0
+          left: 0
+          height: 197px
+          width: 44%
+          border-radius: 30px 0 30px 0
+          z-index: 1
+
+        &:nth-child(2)
+          top: 0
+          right: 0
+          height: 315px
+          width: 53%
+          border-radius: 0 30px 0 0
+          z-index: 2
+
+        &:nth-child(3)
+          bottom: 0
+          left: 0
+          height: 315px
+          width: 53%
+          border-radius: 0 0 0 30px
+          z-index: 1
+
+        &:nth-child(4)
+          bottom: 0
+          right: 0
+          height: 197px
+          width: 44%
+          border-radius: 30px 0 30px 0
+          z-index: 1
+
+/***********      blog      ***********/
+.blog
+  .list
+    @include grid($columns: 1fr 1fr)
+
+    .item
+      position: relative
+
+      &:hover
+        .image
+          .img
+            transform: scale(1.1)
+            transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95)
+
+      .image
+        height: 400px
+        width: 100%
+        overflow: hidden
+
+        .img
+          height: 100%
+          width: 100%
+          @include image()
+
+      .details
+        position: absolute
+        left: 0
+        top: 0
+        max-width: 350px
+        width: 100%
+        background-color: rgba($dark, .55)
+        backdrop-filter: blur(4px)
+        padding: 1rem
+        color: $light
+
+        .date-time
+          @include flex($justify: flex-start)
+
+          .date
+            text-align: center
+
+            .day
+              font-size: 20px
+
+            .month
+              font-size: 14px
+              text-transform: uppercase
+              font-weight: 300
+
+          .line
+            height: 40px
+            width: 1px
+            background-color: $light
+            margin: 0 1rem
+
+          .time
+            .hrs
+              margin-bottom: 6px
+            .hrs, .loc
+              font-size: 14px
+              @include flex($justify: flex-start)
+              font-weight: 300
+
+              i
+                margin-right: 6px
+                font-size: 13px
+
+        .name
+          margin: 1rem 0 .6rem
+          font-weight: 500
+          font-size: 15px
+
+        p
+          font-size: 13px
+          font-weight: 300
+          margin-bottom: 1rem
+          line-height: 1.2rem
+          letter-spacing: 1px
+          max-height: 80px
+          overflow-y: auto
+
+        button
+          @include button()
+          padding: .4rem .7rem
+
+/***********      contact-page      ***********/
+.contact-page
+  .title
+    font-size: 24px
+    color: $main
+    text-align: left
+
+  .section
+    @include grid($columns: 2fr 1fr)
+
+    .form-section
+      .groups
+        @include grid($columns: 1fr 1fr)
+
+      .group
+        position: relative
+        border: 1px solid rgba($dark, .3)
+        margin-bottom: 2rem
+        border-radius: 20px
+
+        label
+          position: absolute
+          top: 0
+          left: 15px
+          transform: translateY(-50%)
+          background-color: $light
+          border: 1px solid rgba($dark, .3)
+          padding: .2rem .8rem
+          font-size: 13px
+          color: $para
+          border-radius: 20px
+
+        input, textarea
+          padding: 1rem
+          font-size: 16px
+          width: 100%
+
+        textarea
+          height: 100px
+
+      button
+        @include button()
+        border-radius: 20px
+
+    .info-section
+      color: $light
+      padding: 2rem
+      border-radius: 20px
+      background: linear-gradient(221.31deg, #8B75D9 0%, #55419A 100%)
+
+      .title
+        color: $light
+        font-size: 30px
+
+      ul
+        li
+          margin-bottom: 1.5rem
+          @include flex($justify: flex-start)
+
+          i
+            height: 40px
+            width: 40px
+            border-radius: 50%
+            background-color: $light
+            color: $main
+            @include flex($justify: center)
+            margin-right: 10px
+            font-size: 16px
+
+          span
+            width: 80%
+            font-size: 16px
+
+      .icon-list
+        @include flex($justify: space-around)
+        margin-top: 2rem
+
+        i
+          height: 40px
+          width: 40px
+          border-radius: 50%
+          background-color: $light
+          color: $main
+          @include flex($justify: center)
+          margin-right: 10px
+          font-size: 16px
