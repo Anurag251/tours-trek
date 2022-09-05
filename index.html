@@ -72,6 +72,37 @@
 
     <!-- banner-start -->
     <div class="banner">
+      <div class="search-section">
+        <h2>Find Hotels in Nepal</h2>
+        <p>3021 vacation rentals and hotels available now</p>
+
+        <form action="">
+          <div class="input-section">
+            <div class="search-box">
+              <div class="icon">
+                <i class="fas fa-search"></i>
+              </div>
+
+              <input type="text" placeholder="Search and explore..." />
+            </div>
+
+            <div class="check-in-out-date">
+              <input type="date" placeholder="Check in Check out" />
+            </div>
+
+            <div class="select-dorp">
+              <select name="" id="">
+                <option value="">Person 1</option>
+                <option value="">Person 2</option>
+                <option value="">Person 3</option>
+              </select>
+            </div>
+
+            <button>Search</button>
+          </div>
+        </form>
+      </div>
+
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -79,54 +110,26 @@
               class="item"
               style="background-image: url(./assets/images/banner1.png)"
             >
-              <div class="details">
+              <!-- <div class="details">
                 <h2>Kathmandu to Ghandruk TourPackage</h2>
                 <h5>Your best Adventure Deals with nature</h5>
 
                 <button>View Adventures</button>
-              </div>
+              </div> -->
             </div>
           </div>
 
           <div class="swiper-slide">
             <div
               class="item"
-              style="background-image: url(./assets/images/banner1.png)"
+              style="background-image: url(./assets/images/Adventure1.png)"
             >
-              <div class="details">
+              <!-- <div class="details">
                 <h2>Kathmandu to Ghandruk TourPackage</h2>
                 <h5>Your best Adventure Deals with nature</h5>
 
                 <button>View Adventures</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div
-              class="item"
-              style="background-image: url(./assets/images/banner1.png)"
-            >
-              <div class="details">
-                <h2>Kathmandu to Ghandruk TourPackage</h2>
-                <h5>Your best Adventure Deals with nature</h5>
-
-                <button>View Adventures</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div
-              class="item"
-              style="background-image: url(./assets/images/banner1.png)"
-            >
-              <div class="details">
-                <h2>Kathmandu to Ghandruk TourPackage</h2>
-                <h5>Your best Adventure Deals with nature</h5>
-
-                <button>View Adventures</button>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -222,6 +225,16 @@
       </div>
     </section>
     <!-- country-package-end -->
+
+    <!-- trek-area-start -->
+    <section>
+      <div class="trek-area">
+        <div class="title">Treking Area</div>
+
+        <img src="./assets/images/maps-broadcom.png" alt="" />
+      </div>
+    </section>
+    <!-- trek-area-end -->
 
     <!-- special-package-start -->
     <section
@@ -423,6 +436,89 @@
       </div>
     </section>
     <!-- special-package-end -->
+
+    <!-- our-hotels-start -->
+    <section>
+      <div class="our-hotels">
+        <div class="title">Our Popular Hotels</div>
+
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div
+                class="item"
+                style="background-image: url(./assets/images/hotel1.webp)"
+              >
+                <div class="details">
+                  <h2>Hotel Jalmahal</h2>
+                  <p>Your best Adventure Deals with nature</p>
+
+                  <button>Explore</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div
+                class="item"
+                style="background-image: url(./assets/images/hotel2.webp)"
+              >
+                <div class="details">
+                  <h2>Hotel Jalmahal</h2>
+                  <p>Your best Adventure Deals with nature</p>
+
+                  <button>Explore</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div
+                class="item"
+                style="background-image: url(./assets/images/hotel3.jpeg)"
+              >
+                <div class="details">
+                  <h2>Hotel Jalmahal</h2>
+                  <p>Your best Adventure Deals with nature</p>
+
+                  <button>Explore</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div
+                class="item"
+                style="background-image: url(./assets/images/hotel4.jpeg)"
+              >
+                <div class="details">
+                  <h2>Hotel Jalmahal</h2>
+                  <p>Your best Adventure Deals with nature</p>
+
+                  <button>Explore</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div
+                class="item"
+                style="background-image: url(./assets/images/hotel5.jpeg)"
+              >
+                <div class="details">
+                  <h2>Hotel Jalmahal</h2>
+                  <p>Your best Adventure Deals with nature</p>
+
+                  <button>Explore</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <!-- our-hotels-end -->
 
     <!-- advanture-start -->
     <section>
@@ -915,6 +1011,19 @@
     <script>
       var swiper = new Swiper(".banner .mySwiper", {
         slidesPerView: 1,
+        effect: "fade",
+
+        autoplay: {
+          delay: 3000,
+        },
+      });
+
+      var swiper = new Swiper(".our-hotels .mySwiper", {
+        slidesPerView: 4,
+
+        autoplay: {
+          delay: 3000,
+        },
       });
 
       var swiper = new Swiper(".explore-activities .mySwiper", {
