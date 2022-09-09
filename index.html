@@ -43,6 +43,12 @@
           </li>
 
           <li>
+            <a href="hotel.html">
+              <button class="nav-btn">Hotels</button>
+            </a>
+          </li>
+
+          <li>
             <a href="shop.html">
               <button class="nav-btn">Shop</button>
             </a>
@@ -72,35 +78,51 @@
 
     <!-- banner-start -->
     <div class="banner">
-      <div class="search-section">
-        <h2>Find Hotels in Nepal</h2>
-        <p>3021 vacation rentals and hotels available now</p>
+      <div class="wrapper search-section">
+        <div class="content-area">
+          <h2>Find Hotels in Nepal</h2>
+          <p>
+            3021 vacation rentals and hotels available now 3021 vacation rentals
+            and hotels available now 3021 vacation rentals and hotels available
+            now 3021 vacation rentals and hotels available now
+          </p>
+        </div>
 
-        <form action="">
-          <div class="input-section">
-            <div class="search-box">
-              <div class="icon">
-                <i class="fas fa-search"></i>
+        <div class="form-area">
+          <h2>Find Hotels in Nepal</h2>
+
+          <form action="">
+            <div class="input-section">
+              <div class="search-box">
+                <div class="icon">
+                  <i class="fas fa-search"></i>
+                </div>
+
+                <input type="text" placeholder="Search and explore..." />
               </div>
 
-              <input type="text" placeholder="Search and explore..." />
-            </div>
+              <div class="check-in-out-date">
+                <label for="">Check In</label>
+                <input type="date" placeholder="Check in Check out" />
+              </div>
 
-            <div class="check-in-out-date">
-              <input type="date" placeholder="Check in Check out" />
-            </div>
+              <div class="check-in-out-date">
+                <label for="">Check Out</label>
+                <input type="date" placeholder="Check in Check out" />
+              </div>
 
-            <div class="select-dorp">
-              <select name="" id="">
-                <option value="">Person 1</option>
-                <option value="">Person 2</option>
-                <option value="">Person 3</option>
-              </select>
-            </div>
+              <div class="select-dorp">
+                <select name="" id="">
+                  <option value="">Person 1</option>
+                  <option value="">Person 2</option>
+                  <option value="">Person 3</option>
+                </select>
+              </div>
 
-            <button>Search</button>
-          </div>
-        </form>
+              <button>Search</button>
+            </div>
+          </form>
+        </div>
       </div>
 
       <div class="swiper mySwiper">
@@ -227,13 +249,13 @@
     <!-- country-package-end -->
 
     <!-- trek-area-start -->
-    <section>
+    <!-- <section>
       <div class="trek-area">
         <div class="title">Treking Area</div>
 
         <img src="./assets/images/maps-broadcom.png" alt="" />
       </div>
-    </section>
+    </section> -->
     <!-- trek-area-end -->
 
     <!-- special-package-start -->
@@ -271,7 +293,7 @@
                   region near the Tibetan[...]
                 </p>
 
-                <a href="#">
+                <a href="product-details-page.html">
                   <button>Details</button>
                 </a>
               </div>
@@ -302,7 +324,7 @@
                   region near the Tibetan[...]
                 </p>
 
-                <a href="#">
+                <a href="product-details-page.html">
                   <button>Details</button>
                 </a>
               </div>
@@ -333,7 +355,7 @@
                   region near the Tibetan[...]
                 </p>
 
-                <a href="#">
+                <a href="product-details-page.html">
                   <button>Details</button>
                 </a>
               </div>
@@ -364,7 +386,7 @@
                   region near the Tibetan[...]
                 </p>
 
-                <a href="#">
+                <a href="product-details-page.html">
                   <button>Details</button>
                 </a>
               </div>
@@ -395,7 +417,7 @@
                   region near the Tibetan[...]
                 </p>
 
-                <a href="#">
+                <a href="product-details-page.html">
                   <button>Details</button>
                 </a>
               </div>
@@ -426,7 +448,7 @@
                   region near the Tibetan[...]
                 </p>
 
-                <a href="#">
+                <a href="product-details-page.html">
                   <button>Details</button>
                 </a>
               </div>
@@ -1019,16 +1041,40 @@
       });
 
       var swiper = new Swiper(".our-hotels .mySwiper", {
-        slidesPerView: 4,
+        slidesPerView: 1,
 
         autoplay: {
           delay: 3000,
         },
+
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+          },
+          768: {
+            slidesPerView: 3,
+          },
+          1024: {
+            slidesPerView: 4,
+          },
+        },
       });
 
       var swiper = new Swiper(".explore-activities .mySwiper", {
-        slidesPerView: 4,
+        slidesPerView: 1,
         spaceBetween: 20,
+
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+          },
+          768: {
+            slidesPerView: 3,
+          },
+          1024: {
+            slidesPerView: 4,
+          },
+        },
       });
 
       var swiper = new Swiper(".testinomial .mySwiper", {

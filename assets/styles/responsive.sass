@@ -1,0 +1,174 @@
+@import './styles.sass'
+
+@media only screen and ( max-width:  1300px)
+  .wrapper
+    max-width: 1200px
+
+@media only screen and ( max-width:  1200px)
+  .wrapper
+    max-width: 1100px
+
+  /***********      country-package      ***********/
+  .country-package
+    .item
+      &:nth-child(1)
+        height: 300px
+
+      &:nth-child(6)
+        height: 300px
+
+@media only screen and ( max-width:  1100px)
+  .wrapper
+    max-width: 1000px
+
+  /***********      special-package      ***********/
+  .special-package
+    .list
+      @include grid($columns: 1fr 1fr)
+
+  /***********      gallery      ***********/
+  .gallery
+    .list
+      @include grid($columns: 1fr 1fr 1fr)
+
+@media only screen and ( max-width:  1000px)
+  .wrapper
+    max-width: 800px
+
+  /***********      title      ***********/
+  .title
+    font-size: 27px
+
+  /***********      Banner      ***********/
+  .banner
+    .search-section
+      flex-direction: column
+
+      .content-area
+        text-align: center
+        margin-bottom: 2rem
+
+    .swiper-slide
+      .item
+        height: 700px
+
+  /***********      adventure-ideas      ***********/
+  .adventure-ideas
+    .list
+      @include grid($columns: 1fr 1fr 1fr)
+
+  /***********      testinomial      ***********/
+  .testinomial
+    max-width: 1000px
+
+    .item
+      padding: 0 6rem
+
+@media only screen and ( max-width:  800px)
+  .wrapper
+    max-width: 600px
+
+  /***********      country-package      ***********/
+  .country-package
+    grid-template-areas: 'item1 item1 item1 item1' 'item2 item2 item3 item3' 'item4 item4 item5 item5' 'item6 item7 item7 item8' 'item6 item7 item7 item8'
+
+    .item
+      &:nth-child(1)
+        height: 200px
+
+      &:nth-child(2)
+        height: 170px
+
+      &:nth-child(4)
+        height: 170px
+
+      &:nth-child(6)
+        height: 200px
+
+      .name
+        font-size: 16px
+
+  /***********      special-package      ***********/
+  .special-package
+    .list
+      @include grid($columns: 1fr)
+
+  /***********      adventure-ideas      ***********/
+  .adventure-ideas
+    .list
+      @include grid($columns: 1fr 1fr)
+
+  /***********      gallery      ***********/
+  .gallery
+    .list
+      @include grid($columns: 1fr 1fr)
+
+  /***********      about      ***********/
+  .about
+    @include grid($columns: 1fr)
+
+    .image-sec
+      display: none
+
+  /***********      footer      ***********/
+  footer
+    .footer-list
+      @include grid($columns: 1fr 1fr)
+
+@media only screen and ( max-width:  600px)
+  .wrapper
+    max-width: 400px
+
+  /***********      title      ***********/
+  .title
+    font-size: 24px
+
+  /***********      country-package      ***********/
+  .country-package
+    grid-template-areas: 'item1 item1 item1 item1' 'item2 item2 item3 item3' 'item4 item4 item5 item5' 'item7 item7 item7 item7' 'item6 item6 item8 item8'
+
+    .item
+
+      &:nth-child(1)
+        height: 200px
+
+      &:nth-child(2)
+        height: 140px
+
+      &:nth-child(4)
+        height: 140px
+
+      &:nth-child(6)
+        height: 200px
+
+      &:nth-child(7)
+        height: 200px
+
+      .package
+        font-size: 10px
+        padding: .2rem .4rem
+
+      .name
+        font-size: 14px
+
+  /***********      adventure-ideas      ***********/
+  .adventure-ideas
+    .list
+      @include grid($columns: 1fr)
+
+  /***********      gallery      ***********/
+  .gallery
+    .list
+      @include grid($columns: 1fr)
+
+  /***********      testinomial      ***********/
+  .testinomial
+    max-width: 1000px
+
+    .item
+      padding: 0 2rem
+
+  /***********      footer      ***********/
+  footer
+    .footer-list
+      @include grid($columns: 1fr)
