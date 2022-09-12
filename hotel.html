@@ -95,16 +95,17 @@
           <div class="title">Our Special Hotels</div>
 
           <div class="search-for-hotels">
-            <div class="search-box">
-              <div class="search-input">
-                <input type="text" />
-                <div class="icon">
-                  <i class="fas fa-map-marker-alt"></i>
+            <form action="">
+              <div class="search-box">
+                <div class="search-input">
+                  <input type="text" />
+                  <div class="icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <label for="">Search Your Travel</label>
                 </div>
-                <label for="">Search Your Travel</label>
-              </div>
 
-              <div class="check-in-out">
+                <!-- <div class="check-in-out">
                 <input type="text" />
                 <div class="icon">
                   <i class="fas fa-calendar-alt"></i>
@@ -126,93 +127,106 @@
                   <i class="fas fa-user"></i>
                 </div>
                 <label for="">Travellers</label>
-              </div>
+              </div> -->
 
-              <button>Search</button>
-            </div>
+                <button>Search</button>
+              </div>
+            </form>
           </div>
 
           <div class="divide-sec">
             <div class="filter-section">
-              <div class="title">Filter by</div>
-              <div class="item">
-                <h3>Services</h3>
-                <ul>
-                  <li>
-                    <input type="checkbox" id="Hotel" />
-                    <label for="Hotel"> Hotel </label>
-                  </li>
-                  <li>
-                    <input type="checkbox" id="Restaurant" />
-                    <label for="Restaurant"> Restaurant </label>
-                  </li>
-                  <li>
-                    <input type="checkbox" id="Resort" />
-                    <label for="Resort"> Resort </label>
-                  </li>
-                  <li>
-                    <input type="checkbox" id="Apartment" />
-                    <label for="Apartment"> Apartment </label>
-                  </li>
-                </ul>
-              </div>
+              <form action="">
+                <div class="title">
+                  <span>Filter by</span>
+                  <i class="fas fa-times filter-close-btn"></i>
+                </div>
+                <div class="item">
+                  <h3>Services</h3>
+                  <ul>
+                    <li>
+                      <input type="checkbox" id="Hotel" />
+                      <label for="Hotel"> Hotel </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="Restaurant" />
+                      <label for="Restaurant"> Restaurant </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="Resort" />
+                      <label for="Resort"> Resort </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="Apartment" />
+                      <label for="Apartment"> Apartment </label>
+                    </li>
+                  </ul>
+                </div>
 
-              <div class="item">
-                <h3>Popular filters</h3>
-                <ul>
-                  <li>
-                    <input type="checkbox" id="Hot-tub" />
-                    <label for="Hot-tub"> Hot tub </label>
-                  </li>
-                  <li>
-                    <input type="checkbox" id="Eastern-Kowloon" />
-                    <label for="Eastern-Kowloon"> Eastern Kowloon </label>
-                  </li>
-                  <li>
-                    <input type="checkbox" id="Free-airport-shuttle" />
-                    <label for="Free-airport-shuttle">
-                      Free airport shuttle
-                    </label>
-                  </li>
-                  <li>
-                    <input type="checkbox" id="Gym" />
-                    <label for="Gym"> Gym </label>
-                  </li>
-                  <li>
-                    <input type="checkbox" id="Dinner-included" />
-                    <label for="Dinner-included"> Dinner included </label>
-                  </li>
-                </ul>
-              </div>
+                <div class="item">
+                  <h3>Popular filters</h3>
+                  <ul>
+                    <li>
+                      <input type="checkbox" id="Hot-tub" />
+                      <label for="Hot-tub"> Hot tub </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="Eastern-Kowloon" />
+                      <label for="Eastern-Kowloon"> Eastern Kowloon </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="Free-airport-shuttle" />
+                      <label for="Free-airport-shuttle">
+                        Free airport shuttle
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="Gym" />
+                      <label for="Gym"> Gym </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="Dinner-included" />
+                      <label for="Dinner-included"> Dinner included </label>
+                    </li>
+                  </ul>
+                </div>
 
-              <div class="item">
-                <h3>Price per night</h3>
-                <ul>
-                  <li>
-                    <input type="checkbox" id="price1" />
-                    <label for="price1"> less than Rs.500 </label>
-                  </li>
-                  <li>
-                    <input type="checkbox" id="price2" />
-                    <label for="price2"> Rs.1000 to Rs.5000 </label>
-                  </li>
-                  <li>
-                    <input type="checkbox" id="price3" />
-                    <label for="price3"> Rs.10000 to Rs.50000 </label>
-                  </li>
-                  <li>
-                    <input type="checkbox" id="price4" />
-                    <label for="price4"> Rs.75000 to Rs.90000 </label>
-                  </li>
-                  <li>
-                    <input type="checkbox" id="price5" />
-                    <label for="price5"> Rs.100000 </label>
-                  </li>
-                </ul>
-              </div>
+                <div class="item">
+                  <h3>Price per night</h3>
+                  <ul>
+                    <li>
+                      <input type="checkbox" id="price1" />
+                      <label for="price1"> less than Rs.500 </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="price2" />
+                      <label for="price2"> Rs.1000 to Rs.5000 </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="price3" />
+                      <label for="price3"> Rs.10000 to Rs.50000 </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="price4" />
+                      <label for="price4"> Rs.75000 to Rs.90000 </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="price5" />
+                      <label for="price5"> Rs.100000 </label>
+                    </li>
+                  </ul>
+                </div>
+
+                <button>Filter</button>
+              </form>
             </div>
 
             <div class="list">
+              <div class="title">
+                <span>Hotels</span>
+                <i class="fas fa-filter filter-open-btn"></i>
+              </div>
+
               <div class="item">
                 <div class="body">
                   <div class="image-sec">
@@ -269,13 +283,16 @@
                         </p>
                       </div>
 
-                      <div class="rating">
-                        <div class="stars" data-value="3"></div>
+                      <div class="bottom-area">
+                        <div class="rating">
+                          <div class="stars" data-value="3"></div>
 
-                        <div class="rev"><strong>4.1</strong> / 10 (200)</div>
+                          <div class="rev"><strong>4.1</strong> / 10 (200)</div>
+                        </div>
+
+                        <div class="price-sec">Rs 1200</div>
                       </div>
                     </div>
-                    <div class="price-sec">Rs 1200</div>
                   </div>
                 </div>
 
@@ -346,13 +363,16 @@
                         </p>
                       </div>
 
-                      <div class="rating">
-                        <div class="stars" data-value="3"></div>
+                      <div class="bottom-area">
+                        <div class="rating">
+                          <div class="stars" data-value="3"></div>
 
-                        <div class="rev"><strong>4.1</strong> / 10 (200)</div>
+                          <div class="rev"><strong>4.1</strong> / 10 (200)</div>
+                        </div>
+
+                        <div class="price-sec">Rs 1200</div>
                       </div>
                     </div>
-                    <div class="price-sec">Rs 1200</div>
                   </div>
                 </div>
 
@@ -423,167 +443,16 @@
                         </p>
                       </div>
 
-                      <div class="rating">
-                        <div class="stars" data-value="3"></div>
+                      <div class="bottom-area">
+                        <div class="rating">
+                          <div class="stars" data-value="3"></div>
 
-                        <div class="rev"><strong>4.1</strong> / 10 (200)</div>
+                          <div class="rev"><strong>4.1</strong> / 10 (200)</div>
+                        </div>
+
+                        <div class="price-sec">Rs 1200</div>
                       </div>
                     </div>
-                    <div class="price-sec">Rs 1200</div>
-                  </div>
-                </div>
-
-                <a href="hotel-details.html">
-                  <div class="footer">
-                    Select your room
-                    <img
-                      src="./assets/images/icon/cil_arrow-right.svg"
-                      alt=""
-                    />
-                  </div>
-                </a>
-              </div>
-
-              <div class="item">
-                <div class="body">
-                  <div class="image-sec">
-                    <a href="#">
-                      <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                            <img src="./assets/images/hotel1.webp" alt="" />
-                          </div>
-
-                          <div class="swiper-slide">
-                            <img src="./assets/images/hotel2.webp" alt="" />
-                          </div>
-
-                          <div class="swiper-slide">
-                            <img src="./assets/images/hotel3.jpeg" alt="" />
-                          </div>
-
-                          <div class="swiper-slide">
-                            <img src="./assets/images/hotel4.jpeg" alt="" />
-                          </div>
-
-                          <div class="swiper-slide">
-                            <img src="./assets/images/hotel5.jpeg" alt="" />
-                          </div>
-                        </div>
-
-                        <div class="swiper-button-next">
-                          <img
-                            src="./assets/images/icon/cil_arrow-right.svg"
-                            alt=""
-                          />
-                        </div>
-                        <div class="swiper-button-prev">
-                          <img
-                            src="./assets/images/icon/cil_arrow-left.svg"
-                            alt=""
-                          />
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-
-                  <div class="details-sec">
-                    <div class="info-sec">
-                      <div class="top">
-                        <h4 class="name"><a href="#">Hotel Jalmahal</a></h4>
-                        <p class="desc">
-                          Lorem ipsum dolor, sit amet consectetur adipisicing
-                          elit. Eius laboriosam voluptatum illum incidunt? Modi,
-                          adipisci earum. Quos quisquam vel minima enim, omnis
-                          excepturi ut, iusto vitae necessitatibus provident
-                          autem unde.
-                        </p>
-                      </div>
-
-                      <div class="rating">
-                        <div class="stars" data-value="3"></div>
-
-                        <div class="rev"><strong>4.1</strong> / 10 (200)</div>
-                      </div>
-                    </div>
-                    <div class="price-sec">Rs 1200</div>
-                  </div>
-                </div>
-
-                <a href="hotel-details.html">
-                  <div class="footer">
-                    Select your room
-                    <img
-                      src="./assets/images/icon/cil_arrow-right.svg"
-                      alt=""
-                    />
-                  </div>
-                </a>
-              </div>
-
-              <div class="item">
-                <div class="body">
-                  <div class="image-sec">
-                    <a href="#">
-                      <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                            <img src="./assets/images/hotel1.webp" alt="" />
-                          </div>
-
-                          <div class="swiper-slide">
-                            <img src="./assets/images/hotel2.webp" alt="" />
-                          </div>
-
-                          <div class="swiper-slide">
-                            <img src="./assets/images/hotel3.jpeg" alt="" />
-                          </div>
-
-                          <div class="swiper-slide">
-                            <img src="./assets/images/hotel4.jpeg" alt="" />
-                          </div>
-
-                          <div class="swiper-slide">
-                            <img src="./assets/images/hotel5.jpeg" alt="" />
-                          </div>
-                        </div>
-
-                        <div class="swiper-button-next">
-                          <img
-                            src="./assets/images/icon/cil_arrow-right.svg"
-                            alt=""
-                          />
-                        </div>
-                        <div class="swiper-button-prev">
-                          <img
-                            src="./assets/images/icon/cil_arrow-left.svg"
-                            alt=""
-                          />
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-
-                  <div class="details-sec">
-                    <div class="info-sec">
-                      <div class="top">
-                        <h4 class="name"><a href="#">Hotel Jalmahal</a></h4>
-                        <p class="desc">
-                          Lorem ipsum dolor, sit amet consectetur adipisicing
-                          elit. Eius laboriosam voluptatum illum incidunt? Modi,
-                          adipisci earum. Quos quisquam vel minima enim, omnis
-                          excepturi ut, iusto vitae necessitatibus provident
-                          autem unde.
-                        </p>
-                      </div>
-
-                      <div class="rating">
-                        <div class="stars" data-value="3"></div>
-
-                        <div class="rev"><strong>4.1</strong> / 10 (200)</div>
-                      </div>
-                    </div>
-                    <div class="price-sec">Rs 1200</div>
                   </div>
                 </div>
 
@@ -711,6 +580,9 @@
       </div>
     </footer>
     <!-- footer-end -->
+
+    <!-- js -->
+    <script src="./assets/js/scripts.js"></script>
 
     <!-- swiper js -->
     <script src="./assets/js/swiper.min.js"></script>
